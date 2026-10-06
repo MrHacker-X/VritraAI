@@ -1,0 +1,10 @@
+# VritraAI - runtime dependencies
+# Python 3.9+ recommended (3.10+ preferred)
+
+# Core (no openai/jiter - Termux-friendly OpenAI-compat client uses requests)
+requests>=2.28.0
+prompt-toolkit>=3.0.0
+rich>=13.0.0
+
+# Optional - nicer code display (agent/assistant degrade gracefully without these)
+# pygments>=2.13.0

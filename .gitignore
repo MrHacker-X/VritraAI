@@ -1,0 +1,87 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv-build/
+pip-wheel-metadata/
+*.whl
+wheelhouse/
+
+# --- Virtualenvs ---
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+
+# --- Caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.dmypy.json
+dmypy.json
+
+# --- IDE / editor / OS ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Local secrets / runtime state ---
+.env
+.env.*
+!.env.example
+.vritraai/
+**/.vritraai/
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# User config lives outside the repo (~/.config-vritrasecz/) - never commit dumps:
+**/config-vritrasecz/
+
+# --- Scratch / backups ---
+*.backup_*
+*.log
+*.orig
+*.rej
+tmp/
+.cache/
+
+# --- Cursor / agent local ---
+.cursor/
+
+# --- OG generator local artifacts ---
+og-generator/og/
+*.zip
+
+# Stale OG webp (PNG set is canonical)
+vritraai-docs/assets/img/og/**/*.webp
+
+# Local reference drafts (do not ship)
+readme-sample.md
+*_sample.md
+
+# Temporary local checkers / scratch scripts
+tmp_ai_checker.py
+tmp_*.py

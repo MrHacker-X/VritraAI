@@ -1,0 +1,14 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+include pyproject.toml
+include vritraai.py
+recursive-include core *.py
+global-exclude *.py[cod] __pycache__ .pytest_cache
+prune vritraai-docs
+prune og-generator
+prune vritraai-og
+prune .vritraai
+prune .venv
+prune tests
