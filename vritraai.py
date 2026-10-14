@@ -34,7 +34,7 @@ from core import runtime
 # Session approval mode set at launch (ask | auto | safe)
 SESSION_APPROVAL = "ask"
 
-VERSION = "1.0.2-cli"
+VERSION = "1.0.3-cli"
 PRODUCT = "VritraAI"
 TAGLINE = "AI Interactive Assistant"
 
@@ -646,4 +646,10 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    from core.remote_control import RemoteControl
+
+    # Workspace directory args still launch the interactive REPL.
+    _helpish = {"-h", "--help", "-v", "--version", "help", "version"}
+    _interactive = not (len(sys.argv) > 1 and sys.argv[1] in _helpish)
+    with RemoteControl(tool_id="vritra_ai", interactive=_interactive):
+        sys.exit(main())
