@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.3--cli-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/version-1.0.4--cli-blue?style=flat-square">
   <img src="https://img.shields.io/badge/python-3.9%2B-informational?style=flat-square">
   <img src="https://img.shields.io/badge/engine-agent%20loop-success?style=flat-square">
   <img src="https://img.shields.io/badge/platform-Termux%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square">

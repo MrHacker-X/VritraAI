@@ -17,7 +17,7 @@ with open("requirements.txt", "r", encoding="utf-8") as f:
 
 setup(
     name="vritraai",
-    version="1.0.3",
+    version="1.0.4",
     author="Alex Butler",
     author_email="contact@vritrasec.com",
     description=(
