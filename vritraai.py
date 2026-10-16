@@ -34,7 +34,7 @@ from core import runtime
 # Session approval mode set at launch (ask | auto | safe)
 SESSION_APPROVAL = "ask"
 
-VERSION = "1.0.4-cli"
+VERSION = "1.1.0-cli"
 PRODUCT = "VritraAI"
 TAGLINE = "AI Interactive Assistant"
 
